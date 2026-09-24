@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | MarketVerse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+  </head>
+  <body data-page="admin-dashboard" data-layout="admin" data-page-title="Admin Dashboard" data-breadcrumb="Home|index.html">
+    <div id="siteHeader"></div>
+    <div id="breadcrumbShell"></div>
+
+    <main class="section-space-sm">
+      <div class="container">
+        <div class="admin-shell">
+          <aside class="side-menu">
+            <h3 class="h5 fw-bold mb-3">Admin Menu</h3>
+            <a class="active" href="admin-dashboard.html"><i class="bi bi-speedometer2"></i>Overview</a>
+            <a href="admin-products.html"><i class="bi bi-box-seam"></i>Products</a>
+            <a href="admin-orders.html"><i class="bi bi-receipt"></i>Orders</a>
+            <a href="admin-customers.html"><i class="bi bi-people"></i>Customers</a>
+            <a href="admin-inventory.html"><i class="bi bi-archive"></i>Inventory</a>
+            <a href="index.html"><i class="bi bi-shop"></i>View Storefront</a>
+          </aside>
+
+          <div>
+            <div class="row g-4 mb-4">
+              <div class="col-sm-6 col-xl-3" data-reveal>
+                <div class="stats-card h-100">
+                  <div class="icon mb-3"><i class="bi bi-graph-up-arrow"></i></div>
+                  <span class="text-muted-custom small text-uppercase">Revenue</span>
+                  <div class="value">$48.6K</div>
+                  <p class="text-muted-custom mb-0">Monthly gross sales with strong repeat order volume.</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xl-3" data-reveal>
+                <div class="stats-card h-100">
+                  <div class="icon mb-3"><i class="bi bi-cart-check"></i></div>
+                  <span class="text-muted-custom small text-uppercase">Orders</span>
+                  <div class="value">1,284</div>
+                  <p class="text-muted-custom mb-0">Orders placed across all active channels this month.</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xl-3" data-reveal>
+                <div class="stats-card h-100">
+                  <div class="icon mb-3"><i class="bi bi-people-fill"></i></div>
+                  <span class="text-muted-custom small text-uppercase">Customers</span>
+                  <div class="value">3,920</div>
+                  <p class="text-muted-custom mb-0">Growing customer base with high account retention.</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xl-3" data-reveal>
+                <div class="stats-card h-100">
+                  <div class="icon mb-3"><i class="bi bi-box2-heart"></i></div>
+                  <span class="text-muted-custom small text-uppercase">Inventory Health</span>
+                  <div class="value">94%</div>
+                  <p class="text-muted-custom mb-0">Most products remain comfortably stocked for demand.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row g-4 mb-4">
+              <div class="col-lg-7" data-reveal>
+                <div class="summary-card h-100">
+                  <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+                    <div>
+                      <h2 class="h4 fw-bold mb-1">Sales Performance</h2>
+                      <p class="text-muted-custom mb-0">Chart-style UI using progress bars for frontend-only analytics.</p>
+                    </div>
+                    <span class="badge rounded-pill text-bg-light">Last 30 days</span>
+                  </div>
+                  <div class="mb-4">
+                    <div class="d-flex justify-content-between mb-2">
+                      <span>Electronics</span>
+                      <strong>78%</strong>
+                    </div>
+                    <div class="progress progress-thick">
+                      <div class="progress-bar bg-primary" style="width: 78%"></div>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="d-flex justify-content-between mb-2">
+                      <span>Beauty</span>
+                      <strong>65%</strong>
+                    </div>
+                    <div class="progress progress-thick">
+                      <div class="progress-bar bg-success" style="width: 65%"></div>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="d-flex justify-content-between mb-2">
+                      <span>Home Decor</span>
+                      <strong>58%</strong>
+                    </div>
+                    <div class="progress progress-thick">
+                      <div class="progress-bar bg-warning" style="width: 58%"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="d-flex justify-content-between mb-2">
+                      <span>Fashion</span>
+                      <strong>71%</strong>
+                    </div>
+                    <div class="progress progress-thick">
+                      <div class="progress-bar" style="width: 71%; background: linear-gradient(90deg, #ff6b2c, #ffb547);"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5" data-reveal>
+                <div class="summary-card h-100">
+                  <h2 class="h4 fw-bold mb-4">Fulfillment Snapshot</h2>
+                  <div class="summary-row"><span>Pending Orders</span><strong>46</strong></div>
+                  <div class="summary-row"><span>Processing Orders</span><strong>129</strong></div>
+                  <div class="summary-row"><span>Ready to Ship</span><strong>84</strong></div>
+                  <div class="summary-row"><span>Returns Open</span><strong>12</strong></div>
+                  <div class="summary-row"><span>Support Tickets</span><strong>18</strong></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row g-4">
+              <div class="col-lg-7" data-reveal>
+                <div class="table-card h-100">
+                  <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+                    <div>
+                      <h2 class="h4 fw-bold mb-1">Recent Orders</h2>
+                      <p class="text-muted-custom mb-0">Quick operational overview for daily monitoring.</p>
+                    </div>
+                    <a href="admin-orders.html" class="btn btn-outline-secondary">Manage Orders</a>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table align-middle mb-0">
+                      <thead>
+                        <tr>
+                          <th>Order</th>
+                          <th>Customer</th>
+                          <th>Total</th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>#MV-2041</td>
+                          <td>Sophia Carter</td>
+                          <td>$286</td>
+                          <td><span class="status-badge processing">Processing</span></td>
+                        </tr>
+                        <tr>
+                          <td>#MV-2034</td>
+                          <td>Liam Turner</td>
+                          <td>$418</td>
+                          <td><span class="status-badge completed">Completed</span></td>
+                        </tr>
+                        <tr>
+                          <td>#MV-2025</td>
+                          <td>Mia Clark</td>
+                          <td>$91</td>
+                          <td><span class="status-badge pending">Pending</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5" data-reveal>
+                <div class="table-card h-100">
+                  <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+                    <div>
+                      <h2 class="h4 fw-bold mb-1">Low Stock Alerts</h2>
+                      <p class="text-muted-custom mb-0">Products to restock soon.</p>
+                    </div>
+                    <a href="admin-inventory.html" class="btn btn-outline-secondary">Inventory</a>
+                  </div>
+                  <div class="summary-row"><span>NovaTech Creator Tablet</span><strong class="inventory-level low">11 units</strong></div>
+                  <div class="summary-row"><span>CasaVerde Minimal Ceramic Lamp</span><strong class="inventory-level medium">14 units</strong></div>
+                  <div class="summary-row"><span>UrbanWeave Chronograph</span><strong class="inventory-level medium">15 units</strong></div>
+                  <div class="summary-row"><span>CasaVerde Wall Art Pair</span><strong class="inventory-level medium">16 units</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="siteFooter"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/cart.js"></script>
+  </body>
+</html>

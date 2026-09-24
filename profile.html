@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | MarketVerse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+  </head>
+  <body data-page="profile" data-page-title="Profile" data-breadcrumb="Home|index.html>Dashboard|dashboard.html">
+    <div id="siteHeader"></div>
+    <div id="breadcrumbShell"></div>
+
+    <main class="section-space-sm">
+      <div class="container">
+        <div class="dashboard-shell">
+          <aside class="side-menu">
+            <h3 class="h5 fw-bold mb-3">My Account</h3>
+            <a href="dashboard.html"><i class="bi bi-grid"></i>Dashboard</a>
+            <a href="orders.html"><i class="bi bi-receipt"></i>Orders</a>
+            <a href="wishlist.html"><i class="bi bi-heart"></i>Wishlist</a>
+            <a class="active" href="profile.html"><i class="bi bi-person"></i>Profile</a>
+            <a href="login.html"><i class="bi bi-box-arrow-right"></i>Logout</a>
+          </aside>
+
+          <div class="row g-4">
+            <div class="col-lg-4" data-reveal>
+              <div class="summary-card h-100 text-center">
+                <img src="https://picsum.photos/seed/profile-avatar/140/140" alt="Profile avatar" class="rounded-circle mx-auto mb-3" width="120" height="120">
+                <h2 class="h4 fw-bold mb-1">Olivia Bennett</h2>
+                <p class="text-muted-custom mb-3">Premium member since 2023</p>
+                <div class="summary-row"><span>Email</span><strong>olivia@example.com</strong></div>
+                <div class="summary-row"><span>Orders</span><strong>24</strong></div>
+                <div class="summary-row"><span>Wishlist</span><strong>12</strong></div>
+              </div>
+            </div>
+            <div class="col-lg-8" data-reveal>
+              <div class="summary-card">
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+                  <div>
+                    <h2 class="h4 fw-bold mb-1">Update Profile</h2>
+                    <p class="text-muted-custom mb-0">Frontend-only profile editing form with consistent component styling.</p>
+                  </div>
+                </div>
+                <form data-static-submit="Profile updated successfully.">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label class="form-label">First Name</label>
+                      <input type="text" class="form-control" value="Olivia">
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label">Last Name</label>
+                      <input type="text" class="form-control" value="Bennett">
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label">Email Address</label>
+                      <input type="email" class="form-control" value="olivia@example.com">
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label">Phone Number</label>
+                      <input type="tel" class="form-control" value="+1 555 010 999">
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label">Street Address</label>
+                      <input type="text" class="form-control" value="742 Evergreen Terrace">
+                    </div>
+                    <div class="col-md-4">
+                      <label class="form-label">City</label>
+                      <input type="text" class="form-control" value="Seattle">
+                    </div>
+                    <div class="col-md-4">
+                      <label class="form-label">State</label>
+                      <input type="text" class="form-control" value="Washington">
+                    </div>
+                    <div class="col-md-4">
+                      <label class="form-label">Zip Code</label>
+                      <input type="text" class="form-control" value="98101">
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label">Bio</label>
+                      <textarea class="form-control" rows="4" placeholder="Tell us about your shopping style.">Loves premium electronics, intentional decor, and curated lifestyle drops.</textarea>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary mt-4" type="submit">Save Changes</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="siteFooter"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/cart.js"></script>
+  </body>
+</html>
