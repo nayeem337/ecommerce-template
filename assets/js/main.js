@@ -1,3 +1,4 @@
+// PERMANENT_FIX_VERIFIED_MARKER_20260925_MAIN_JS
 (function () {
   const STORAGE_KEYS = {
     cart: "mv-cart",
